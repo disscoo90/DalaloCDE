@@ -8,8 +8,7 @@ import os
 def parse_args() -> Any:
     from argparse import ArgumentParser
 
-    parser = ArgumentParser("Comment on a PR")
-    parser.add_argument("pr_num", type=int)
+    parser = ArgumentParser("Comment on a PR"
     parser.add_argument("action", type=str)
     return parser.parse_args()
 
